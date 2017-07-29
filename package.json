@@ -50,6 +50,7 @@
     }
   },
   "dependencies": {
+    "angular-resource": "^1.6.5",
     "bluebird": "^3.5.0",
     "body-parser": "^1.17.2",
     "express": "^4.14.0",

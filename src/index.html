@@ -1,13 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="dl_app">
   <head>
     <meta charset="utf-8">
     <title>dottedline_revised</title>
+    <base href="/">
     <!-- inject:js -->
     <!-- endinject -->
     <!-- inject:css -->
     <!-- endinject -->
   </head>
+  <nav class="tabs">
+  <a ui-sref="playersIndex">My List</a>
+  
+  <!-- <a ui-sref="gamesIndex">My Games</a>
+  <a ui-sref="about">About</a>
+  <a ui-sref="playerStats">Stats</a> -->
+</nav>
   <body>
+    <main ui-view class="container"></main>
   </body>
 </html>
