@@ -1,0 +1,10 @@
+<p>About to add: {{ playersNew.player }}</p>
+
+<form ng-submit="playersNew.create()">
+  <input type="text" name="" value="" ng-model="playersNew.player.name" placeholder="name">
+  <input type="number" name="" value="" ng-model="playersNew.player.age" placeholder="age">
+  <input type="text" name="" value="" ng-model="playersNew.player.team" placeholder="team">
+  <input type="number" name="" value="" ng-model="playersNew.player.avGoals" placeholder="goals">
+  <input type="number" name="" value="" ng-model="playersNew.player.avAssists" placeholder="assists">
+  <input type="submit" value='Save player'>
+</form>

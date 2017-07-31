@@ -38,38 +38,64 @@ Player.create([{
 .then((players) => {
   console.log(`${players.length} players created!`);
   console.log(players);
-
   return Game.create([{
-    game: {
-      name: 'arsnl vs manu',
-      home: {
-        name: 'Arsenal',
-        game_players: [{ playedBy: players[0],
-          data: [{
-            game_goals: 4,
-            game_assists: 6
-          }]
-        }, { playedBy: players[1],
-          data: [{
-            game_goals: 2,
-            game_assists: 7
-          }]
-        }]
-      },
-      away: {
-        name: 'Man U',
-        game_players: [{ playedBy: players[2],
-          data: [{
-            game_goals: 2,
-            game_assists: 1
-          }]
-        }, { playedBy: players[3],
-          data: [{
-            game_goals: 0,
-            game_assists: 10
-          }]
-        }]
-      }
+    name: 'arsnl vs manu',
+    home: {
+      name: 'lol',
+      game_players: [{ playedBy: players[1],
+        data: {
+          game_goals: 2,
+          game_assists: 1
+        }
+      }, { playedBy: players[3],
+        data: {
+          game_goals: 0,
+          game_assists: 10
+        }
+      }]
+    },
+    away: {
+      name: 'Man U',
+      game_players: [{ playedBy: players[1],
+        data: {
+          game_goals: 2,
+          game_assists: 1
+        }
+      }, { playedBy: players[3],
+        data: {
+          game_goals: 0,
+          game_assists: 10
+        }
+      }]
+    }
+  },{
+    name: 'chelsea vs real madrid',
+    home: {
+      name: 'Real madrid',
+      game_players: [{ playedBy: players[2],
+        data: {
+          game_goals: 42,
+          game_assists: 62
+        }
+      }, { playedBy: players[1],
+        data: {
+          game_goals: 2,
+          game_assists: 7
+        }
+      }]
+    }, away: {
+      name: 'chelsea',
+      game_players: [{ playedBy: players[3],
+        data: {
+          game_goals: 11,
+          game_assists: 11
+        }
+      }, { playedBy: players[3],
+        data: {
+          game_goals: 22,
+          game_assists: 77
+        }
+      }]
     }
   }]);
 })

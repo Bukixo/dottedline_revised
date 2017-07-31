@@ -1,0 +1,71 @@
+<h1>show page for players</h1>
+
+{{ playersShow.player.team}}
+
+<button ng-click="playersShow.delete()">Delete</button>
+<a ui-sref="playersEdit({ id: playersShow.player.id })">EDIT</a>
+<a ui-sref="playersStats({ id: playersShow.player.id })">Stats</a>
+
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="col-md-4" >
+      LEFT PLAYER INFO
+      <div class="row">
+        <div class="col-md-6">
+          <img src="http://via.placeholder.com/70x70">
+        </div>
+        <div class="col-md-6">
+
+          {{ playersShow.player.name}}
+          {{ playersShow.player.age}}
+          {{ playersShow.player.team}}
+        </div>
+        <div class="col-md-12">
+          Bio <br>
+
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+        <div class="col-md-12">
+          Similar players
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-8">
+      <div class="col-md-12">
+        overview | stats | visitors
+      </div>
+      <div class="col-md-12">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="http://via.placeholder.com/80x80">
+          </div>
+          <div class="col-md-4">
+            <img src="http://via.placeholder.com/80x80">
+          </div>
+          <div class="col-md-4">
+            <img src="http://via.placeholder.com/80x80">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <img src="http://via.placeholder.com/350x250">
+      </div>
+      <div class="col-md-12">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="http://via.placeholder.com/80x80">
+          </div>
+          <div class="col-md-4">
+            <img src="http://via.placeholder.com/80x80">
+          </div>
+          <div class="col-md-4">
+            <img src="http://via.placeholder.com/80x80">
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>

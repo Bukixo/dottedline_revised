@@ -1,0 +1,26 @@
+<h1>show page for games</h1>
+
+
+<!-- game name: {{gamesShow.game.name}} </br>
+game home: {{gamesShow.game.home.name}}</br>
+game away: {{gamesShow.game.away.name}}</br>
+ </br> -->
+
+overall game data : {{ gamesShow.game }} <br>
+<br>
+
+game player info: {{ gamesShow.game.home.name }} </br>
+<br>
+
+away: {{ gamesShow.game.away.game_players[0].data}} <br>
+<br>
+
+home: {{ gamesShow.game.home.game_players[0].data}} <br>
+<br>
+
+
+
+
+
+<button ng-click="gamesShow.delete()">Delete</button> <br>
+<a ui-sref="gamesEdit({ id:gamesShow.game.id })">EDIT</a>
