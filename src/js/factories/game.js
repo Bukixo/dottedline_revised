@@ -14,9 +14,14 @@ function Game($resource){
 
   Object.defineProperty(Game.prototype, 'homeName', {
     get: function(){
-      const a = this.game.home.name;
       console.log('hello');
-      return a;
+      return this.home.name;
+    }
+  });
+  Object.defineProperty(Game.prototype, 'awayPlayerGoals', {
+    get: function(){
+      console.log('hello');
+      return this.away.game_players[0].data.game_goals;
     }
   });
   return Game;
