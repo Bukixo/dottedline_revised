@@ -1,4 +1,8 @@
 // Import all of your scss files here
-div {
-  border: 1px solid black;
+div,
+td,
+th {
+   border: 1px solid #dddddd;
+   text-align: center;
+   padding: 8px;
 }

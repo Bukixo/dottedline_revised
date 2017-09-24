@@ -1,0 +1,10 @@
+<p>About to edit {{gamesEdit.game.name}}: </p>
+
+<form ng-submit="gamesEdit.update()">
+  <input type="text" name="" value="" ng-model="gamesEdit.game.homeName" placeholder="home name">
+  <input type="number" name="" value="" ng-model="gamesEdit.game.homeGoals" placeholder="home goals">
+  <input type="text" name="" value="" ng-model="gamesEdit.game.awayGoals" placeholder="away goals">
+  <input type="number" name="" value="" ng-model="gamesEdit.game.homeAssists" placeholder="home Assists">
+  <input type="number" name="" value="" ng-model="gamesEdit.game.awayAssists" placeholder="away assists">
+  <input type="submit" value='Save gmae'>
+</form>

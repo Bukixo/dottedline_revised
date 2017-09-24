@@ -9,7 +9,7 @@ function GamesShowCtrl(Game, $stateParams, $state) {
   const vm = this;
   vm.game = {};
   vm.game = Game.get($stateParams);
-  console.log("vm game", vm.game);
+  console.log('vm game', vm.game);
   function deleteGame() {
     vm.game
       .$remove()
