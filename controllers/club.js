@@ -3,6 +3,7 @@ const Club = require('../models/club');
 function indexClub(req, res, next){
   Club
     .find()
+    .populate('playedBy', 'name')
     .then((clubs) => res.json(clubs))
     .catch(next);
 }
@@ -17,6 +18,7 @@ function createClub(req, res, next){
 function showClub(req, res, next){
   Club
     .findById(req.params.id)
+    .populate('playedBy', 'name')
     .then((club) =>{
       if(!club) return res.notFound();
       res.json(club);

@@ -2,6 +2,8 @@ angular
 .module('dl_app')
 .factory('Player', Player);
 
+
+
 Player.$inject = ['$resource'];
 function Player($resource){
 

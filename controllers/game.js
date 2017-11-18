@@ -3,6 +3,7 @@ const Game = require('../models/game');
 function indexGame(req, res, next){
   Game
     .find()
+    .populate('home', 'name')
     .then((games) => res.json(games))
     .catch(next);
 }
@@ -12,16 +13,22 @@ function createGame(req, res, next){
     .create(req.body)
     .then((game) => res.status(201).json(game))
     .catch(next);
+
 }
 
 function showGame(req, res, next){
   Game
     .findById(req.params.id)
+    .populate('teams.home')
+    .populate('teams.away')
+    // { path: 'fans', select: 'name' }
     .then((game) =>{
       if(!game) return res.notFound();
+      console.log('console.game', game);
       res.json(game);
     })
     .catch(next);
+
 }
 
 function updateGame(req, res, next){

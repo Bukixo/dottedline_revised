@@ -15,7 +15,6 @@ function GamesShowCtrl(Game, $stateParams, $state) {
       .$remove()
       .then(() => $state.go('gamesIndex'));
   }
-
   vm.delete = deleteGame;
 
 }

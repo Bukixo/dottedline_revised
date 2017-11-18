@@ -27,14 +27,14 @@ router.route('/games/:id')
 
   ///////////========= Club =============//////////
 
-  router.route('/clubs')
-    .get(clubsController.index)
-    .post(clubsController.create);
+router.route('/clubs')
+  .get(clubsController.index)
+  .post(clubsController.create);
 
-  router.route('/clubs/:id')
-    .get(clubsController.show)
-    .put(clubsController.update)
-    .delete(clubsController.delete);
+router.route('/clubs/:id')
+  .get(clubsController.show)
+  .put(clubsController.update)
+  .delete(clubsController.delete);
 
 router.all('*', (req, res) => res.notFound());
 
